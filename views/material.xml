@@ -1,0 +1,40 @@
+<odoo>
+    <data>
+        <record id="action_material_tambah_search" model="ir.ui.view">
+            <field name="name">action_material_tambah_search</field>
+            <field name="model">material.data</field>
+            <field name="arch" type="xml">
+                <search string="Filter data">
+                    <field name="tipe" />
+                </search>
+            </field>
+        </record>
+
+        <record id="action_material_tambah_tree" model="ir.ui.view">
+            <field name="name">material.data.tree</field>
+            <field name="model">material.data</field>
+            <field name="arch" type="xml">
+                <tree string="Data Material">
+                    <field name="material_code" />
+                    <field name="material_name" />
+                    <field name="tipe" />
+                    <field name="price" />
+                    <field name="supplier" />
+                </tree>
+            </field>
+        </record>
+
+        <record id="action_material_tambah" model="ir.actions.act_window">
+            <field name="name">Tambah Material</field>
+            <field name="res_model">material.data</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    Click to add a Material
+                </p>
+                <p>Klik tombol create untuk buat Material baru</p>
+            </field>
+        </record>
+
+    </data>
+</odoo>

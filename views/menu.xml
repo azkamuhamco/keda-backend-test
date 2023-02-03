@@ -1,0 +1,19 @@
+<odoo>
+    <data>
+        <menuitem id="material_0"
+            name="Material"
+            sequence="20" />
+
+        <menuitem id="material_1"
+            name="Material"
+            parent="material_0" 
+            action="action_material_tambah" 
+            sequence="20" />
+
+        <menuitem id="supplier" 
+            name="Supplier"
+            parent="material_0"
+            action="action_supplier_tambah" 
+            sequence="20" />
+    </data>
+</odoo>

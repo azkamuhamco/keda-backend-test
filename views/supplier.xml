@@ -1,0 +1,15 @@
+<odoo>
+    <data>
+        <record id="action_supplier_tambah" model="ir.actions.act_window">
+            <field name="name">Tambah Supplier</field>
+            <field name="res_model">material.supplier</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    Click to add a Supplier
+                </p>
+                <p>Klik tombol create untuk buat Supplier baru</p>
+            </field>
+        </record>
+    </data>
+</odoo>
